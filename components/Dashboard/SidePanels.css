@@ -1,0 +1,88 @@
+.side-panel {
+    padding: 24px;
+}
+
+.side-panel h3 {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: var(--text-main);
+}
+
+.stat-card {
+    margin-bottom: 20px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.stat-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--glass-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.fill.secondary {
+    background: var(--secondary);
+}
+
+.fill.accent {
+    background: var(--accent);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: var(--glass-bg);
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    transition: border-color 0.2s ease;
+}
+
+.history-item:hover {
+    border-color: var(--primary);
+}
+
+.history-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.history-meta {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}

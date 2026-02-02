@@ -1,0 +1,100 @@
+.sidebar {
+    width: 260px;
+    height: calc(100vh - 40px);
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    border-radius: 24px;
+}
+
+.sidebar-brand {
+    margin-bottom: 48px;
+    padding: 0 16px;
+}
+
+.sidebar-brand span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: var(--text-dim);
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: var(--glass-bg);
+    color: var(--text-main);
+    transform: translateX(4px);
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+}
+
+.nav-text {
+    font-weight: 500;
+}
+
+.sidebar-user {
+    margin-top: auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--glass-bg);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.user-plan {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 80px;
+        padding: 32px 12px;
+    }
+
+    .nav-text,
+    .user-info,
+    .sidebar-brand span {
+        display: none;
+    }
+}
