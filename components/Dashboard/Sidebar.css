@@ -80,10 +80,33 @@
     font-weight: 600;
 }
 
-.user-plan {
+.user-plan,
+.user-email {
     font-size: 0.75rem;
     color: var(--primary);
     font-weight: 500;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 1024px) {

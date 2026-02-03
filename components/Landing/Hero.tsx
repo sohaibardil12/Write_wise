@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './Hero.css';
 
 export default function Hero() {
@@ -14,8 +15,8 @@ export default function Hero() {
                     Generate high-quality blogs, emails, and social posts in seconds.
                 </p>
                 <div className="hero-btns">
-                    <button className="btn-primary">Get Started Free</button>
-                    <button className="btn-secondary">Explore Templates</button>
+                    <Link href="/auth/signup" className="btn-primary">Get Started Free</Link>
+                    <Link href="/dashboard" className="btn-secondary">Explore Templates</Link>
                 </div>
             </div>
             <div className="hero-visual">

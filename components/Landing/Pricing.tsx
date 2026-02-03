@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './Pricing.css';
 
 const plans = [
@@ -42,7 +43,9 @@ export default function Pricing() {
                                 <li key={j}><span>✓</span> {f}</li>
                             ))}
                         </ul>
-                        <button className={p.popular ? 'btn-primary' : 'btn-secondary'}>{p.btn}</button>
+                        <Link href="/auth/signup" className={p.popular ? 'btn-primary' : 'btn-secondary'} style={{ display: 'inline-block', textAlign: 'center' }}>
+                            {p.btn}
+                        </Link>
                     </div>
                 ))}
             </div>
